@@ -4,12 +4,12 @@ public class GraphsDFS {
 
 	static int adjancy_matrix[][];
 	final static int number_of_vertices = 12;
-	static vertexstate vertex_state[];
+	static Vertexstate vertex_state[];
 	private static void dfs() {
-		vertex_state = new vertexstate[number_of_vertices];
+		vertex_state = new Vertexstate[number_of_vertices];
 		for(int i = 0 ; i< number_of_vertices; i++)
 		{
-			vertex_state[i] = vertexstate.not_visited;
+			vertex_state[i] = Vertexstate.not_visited;
 		}
 		System.out.print("DFS Result");
 		for(int i = 0 ; i <number_of_vertices ; i++)
@@ -19,19 +19,19 @@ public class GraphsDFS {
 	}
 	private static void rundfs( int i )
 	{
-		if(	vertex_state[i] == vertexstate.not_visited)
+		if(	vertex_state[i] == Vertexstate.not_visited)
 		{
-			vertex_state[i] = vertexstate.visiting;
+			vertex_state[i] = Vertexstate.visiting;
 
 			for(int j = 0 ; j< number_of_vertices ; j++)
 			{
-				if(vertex_state[j] == vertexstate.not_visited && isedge(i, j))
+				if(vertex_state[j] == Vertexstate.not_visited && isedge(i, j))
 				{
 					rundfs(j);
 				}
 			}
 			System.out.print(" - "+ i);
-			vertex_state[i] = vertexstate.visited;
+			vertex_state[i] = Vertexstate.visited;
 		}
 	}
 	private static boolean isedge(int i, int j) {
