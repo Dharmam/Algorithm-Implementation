@@ -4,6 +4,7 @@ public class GraphsDFS {
 
 	static int adjancy_matrix[][];
 	final static int number_of_vertices = 12;
+<<<<<<< HEAD
 	static Vertexstate vertex_state[];
 	private static void dfs() {
 		vertex_state = new Vertexstate[number_of_vertices];
@@ -32,6 +33,36 @@ public class GraphsDFS {
 			}
 			System.out.print(" - "+ i);
 			vertex_state[i] = Vertexstate.visited;
+=======
+	static vertexstate vertex_state[];
+	private static void dfs() {
+		vertex_state = new vertexstate[number_of_vertices];
+		for(int i = 0 ; i< number_of_vertices; i++)
+		{
+			vertex_state[i] = vertexstate.not_visited;
+		}
+		System.out.print("DFS Result");
+		for(int i = 0 ; i <number_of_vertices ; i++)
+		{
+			rundfs(i);
+		}
+	}
+	private static void rundfs( int i )
+	{
+		if(	vertex_state[i] == vertexstate.not_visited)
+		{
+			vertex_state[i] = vertexstate.visiting;
+
+			for(int j = 0 ; j< number_of_vertices ; j++)
+			{
+				if(vertex_state[j] == vertexstate.not_visited && isedge(i, j))
+				{
+					rundfs(j);
+				}
+			}
+			System.out.print(" - "+ i);
+			vertex_state[i] = vertexstate.visited;
+>>>>>>> branch 'master' of https://github.com/Dharmam/DataStructures-SortingAlgorithms.git
 		}
 	}
 	private static boolean isedge(int i, int j) {

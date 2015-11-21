@@ -1,5 +1,5 @@
 package dharmam.Assignment4_Graphs;
 
-public enum Vertexstate {
+public enum vertexstate {
 visited, not_visited , visiting ;
 }
