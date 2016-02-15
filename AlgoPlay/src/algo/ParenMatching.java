@@ -17,7 +17,7 @@ public class ParenMatching {
 		else if(str[0] == '}' || str[0] == ']' || str[0] == ')' ) 
 			System.out.println("Not valid");
 		else{
-			for(int i = 0 ; i < str.length ; i++ ){
+			for(int i = 0 ; i < str.length ;  i++ ){
 				if(str[i] == '{' || str[i] == '[' || str[i] == '(' ) stack.push(str[i]);
 				else if (str[i] == '}') {
 					if(stack.peek() == '{') stack.pop() ;
