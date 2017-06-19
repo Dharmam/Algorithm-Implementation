@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="AlgoPlay/src"/>
+	<classpathentry kind="src" path="BinaryTreeTraversalWithStack/src"/>
+	<classpathentry kind="src" path="Garph_Adjacency_List/Graphs_Adjacency_List/src"/>
+	<classpathentry kind="src" path="Graphs_AdjancencyList/src"/>
+	<classpathentry kind="src" path="Kruskal&apos;s Algorithm/Assignment5_MSTKruskal’sAlgorithm/src"/>
+	<classpathentry kind="src" path="LinkedList/ShortProject"/>
+	<classpathentry kind="src" path="LinkedList/src"/>
+	<classpathentry kind="src" path="MergeSort/src"/>
+	<classpathentry kind="src" path="NetworkDesignProject1/src"/>
+	<classpathentry kind="src" path="New folder/NBulbToggle/src"/>
+	<classpathentry kind="src" path="RedixSort/Assignement6_RedixSort/src"/>
+	<classpathentry kind="src" path="sample.algorithm/src/main/java"/>
+	<classpathentry kind="src" path="sample.algorithm/src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="NetworkDesignProject1/bin"/>
+</classpath>
