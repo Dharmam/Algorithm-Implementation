@@ -25,7 +25,7 @@ public class Vertex implements Index {
 	public Integer shortestPathCount;
 	public Integer [] shortestPathDistanceArr; // needed for take-1 and take-2 Bellman ford algorithm
 	public boolean bellmanVariant; // needed to track whether the vertex was changing while last iteration ran. (for negative cycle detection only) 
-	
+	public VisitingState visitingState ;
 	/**
 	 * Constructor for the vertex
 	 * 
@@ -39,6 +39,7 @@ public class Vertex implements Index {
 		Adj = new ArrayList<Edge>();
 		revAdj = new ArrayList<Edge>(); /* only for directed graphs */
 		topologicallyOrderable = true;
+		visitingState = VisitingState.NOTVISITED ;
 	}
 	
 	public void setShortestPathDistanceArr(int numNodes) {
