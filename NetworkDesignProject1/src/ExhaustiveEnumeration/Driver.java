@@ -231,6 +231,7 @@ public class Driver {
 		for (int i = 0; i < d.length; i++) {
 			Double power = Math.ceil(d[i] / 3);
 			reliabilty[i] = Math.pow(1 - p, power + 1);
+			//reliabilty[i] = Math.pow( p, power );
 
 			/*
 			 * System.out.println("ceiling of d[i]/3 : " + power +
